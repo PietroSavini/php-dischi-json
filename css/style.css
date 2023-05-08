@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {}
+
+:root {
+    --main-blue: #1D2D3C;
+    --header-blue: #06131F;
+    --primary-blue: #112030;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* flex proprieties */
+.tc {
+    text-align: center;
+}
+
+.fl {
+    display: flex;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.jb {
+    justify-content: space-between;
+}
+
+.ac {
+    align-items: center;
+}
+
+.dc {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+/* ----------------------------------STYLING---------------------------------------------- */
+/* app */
+header {
+    height: 80px;
+    width: 100%;
+    background-color: var(--header-blue);
+    padding: 1rem 0;
+}
+
+.logo {
+    width: 50px;
+}
+
+main {
+    height: calc(100% - 80px);
+    background-color: var(--main-blue);
+    padding: 2rem 0;
+    overflow-y: auto;
+
+}
+
+/* main----------------------------------- */
+.row {
+    height: 100%;
+}
+
+.col {
+    width: calc(100% / 3);
+
+    min-width: 200px;
+    padding: 1.5rem 1.5rem;
+}
+
+/* card style-------------------------------- */
+
+.card {
+    background-color: var(--primary-blue);
+    height: 100%;
+    padding: 1rem 0;
+    max-width: 415px;
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    gap: 1.5rem;
+}
+
+.card-img {
+    width: 80%;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    height: 60%;
+    flex-grow: 1;
+}
+
+.card-img img {
+    object-fit: cover;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.card-body {
+    padding: 1rem 1rem;
+    height: 30%;
+
+}
