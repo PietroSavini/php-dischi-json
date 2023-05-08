@@ -9,7 +9,9 @@ img {
     display: block;
 }
 
-body {}
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 :root {
     --main-blue: #1D2D3C;
@@ -76,6 +78,7 @@ main {
     background-color: var(--main-blue);
     padding: 2rem 0;
     overflow-y: auto;
+    position: relative;
 
 }
 
@@ -102,6 +105,8 @@ main {
     margin: 0 auto;
     color: #fff;
     gap: 1.5rem;
+    transition: 300ms;
+    cursor: pointer;
 }
 
 .card-img {
@@ -122,4 +127,23 @@ main {
     padding: 1rem 1rem;
     height: 30%;
 
+}
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+/* offcanvas --------------------------------*/
+
+.offcanvas{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    z-index:6;
+    border-radius: 15px;
+    padding: 1rem 1rem;
+    background-color: rgba(6, 19, 31, .5)
 }

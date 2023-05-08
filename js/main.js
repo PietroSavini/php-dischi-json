@@ -4,6 +4,9 @@ createApp({
     data(){
         return{
             dischi:[],
+
+            //offcanvas proprieties
+            show: false,
         }
     },
 
