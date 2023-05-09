@@ -30,8 +30,8 @@
         <main class="fl ac">
             <div class="wrapper ">
                 <div class="row fl wrap jc ">
-                    <div v-for="disk in dischi" class="col">
-                        <div class="card fl dc">
+                    <div v-for="(disk,index) in dischi" class="col">
+                        <div @click="handleDiskClick(index)" class="card fl dc">
                             <div class="card-img tc">
                                 <img :src=" disk.poster" alt="">
                             </div>
